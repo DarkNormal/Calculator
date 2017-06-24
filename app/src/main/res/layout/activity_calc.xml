@@ -7,7 +7,7 @@
     tools:context="com.marklordan.calculator.CalcActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonEquals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/equal"
@@ -20,7 +20,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="149dp"
         android:layout_weight="1"
         android:background="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
@@ -259,8 +259,8 @@
         android:textAlignment="viewEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEquals"
+        app:layout_constraintEnd_toEndOf="@+id/buttonEquals"
         tools:text="567" />
 
 </android.support.constraint.ConstraintLayout>
