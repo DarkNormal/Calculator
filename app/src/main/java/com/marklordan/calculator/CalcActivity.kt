@@ -60,8 +60,11 @@ class CalcActivity : AppCompatActivity() {
         val buttonDivide = findViewById(R.id.buttonDivide) as ImageButton
         buttonDivide.setOnClickListener { onOperatorPressed(OPERATOR_DIVIDE) }
         val buttonMultiply = findViewById(R.id.buttonMultiply) as ImageButton
+        buttonMultiply.setOnClickListener { onOperatorPressed(OPERATOR_MULTIPLY) }
         val buttonSubtract = findViewById(R.id.buttonSubtract) as ImageButton
+        buttonSubtract.setOnClickListener { onOperatorPressed(OPERATOR_SUBTRACTION) }
         val buttonAddition = findViewById(R.id.buttonAddition) as ImageButton
+        buttonAddition.setOnClickListener { onOperatorPressed(OPERATOR_ADDITION) }
     }
 
     fun onNumberPressed(pressedNum: String){
